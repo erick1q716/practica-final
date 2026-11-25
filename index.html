@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FELIZ NAVIDAD</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>   
+        <h1>NAVIDAD</h1>
+        <nav>
+            <button onclick="mostrar('bienvenida')">Bienvenida</button>
+            <button onclick="mostrar('historia')">Historia</button>
+            <button onclick="mostrar('personajes')">Personajes</button>
+            <button onclick="mostrar('regalos')">Regalos</button>
+            <button onclick="mostrar('comida')">Comida</button>
+        </nav>
+    </header>
+    <section id="bienvenida" class="seccion activa">
+        <h2>Bienvenidos a la Navidad</h2>
+        <p>La Navidad es una época de amor, paz y felicidad.</p>
+        <img src="img/arbol navideño.jpg">
+        <h3>Actividades navideñas</h3>
+        <ul>
+            <li>Decorar el árbol.</li>
+            <li>Entregar regalos.</li>
+            <li>Compartir en familia.</li>
+            <li>Preparar la cena navideña.</li>
+        </ul>
+        <h3>Fechas importantes</h3>
+        <table>
+            <tr>
+                <th>Fecha</th>
+                <th>Celebración</th>
+            </tr>
+            <tr>
+                <td>24 de diciembre</td>
+                <td>Nochebuena</td>
+            </tr>
+            <tr>
+                <td>25 de diciembre</td>
+                <td>Navidad</td>
+            </tr>
+            <tr>
+                <td>31 de diciembre</td>
+                <td>Año Nuevo</td>
+            </tr>
+        </table>
+    </section>
+    <section id="historia" class="seccion">
+        <h2>Historia de la Navidad</h2>
+        <div class="historia">
+            <h3>Historia</h3>
+            <p>La Navidad es una festividad cristiana que celebra el nacimiento de Jesucristo. Sin embargo, según la Enciclopedia Britannica, el origen de la celebración reúne más elementos que el mero nacimiento del profeta más importante de la cristiandad.
+El origen preciso de la atribución del 25 de diciembre como fecha de nacimiento de Jesús no está claro. Según la obra británica, esto ocurre porque no hay indicios claros sobre la fecha en el Nuevo Testamento de la Biblia, es decir, en el conjunto de libros sagrados para el cristianismo.
+Una explicación generalizada del origen de esta efeméride es que el 25 de diciembre se produjo la cristianización del dies solis invicti nati (día del nacimiento del sol invicto), informa la Enciclopedia. La festividad era popular en el Imperio Romano y celebraba el solsticio de invierno (en el hemisferio norte) como símbolo del resurgimiento del sol, al mismo tiempo que marcaba el comienzo del invierno y el anuncio del renacimiento de la primavera y el verano.</p>
+        </div>
+        <div class="historia">
+            <h3>Tradiciones</h3>
+            <p>Entre las tradiciones navideñas están decorar el árbol, colocar luces y compartir regalos.</p>
+        </div>
+        <div class="historia">
+            <h3>Celebración</h3>
+            <p>La Navidad es una época para compartir amor, solidaridad y felicidad.</p>
+        </div>
+    </section>
+    <section id="personajes" class="seccion">
+        <h2>Personajes Navideños</h2>
+        <div class="personaje">
+            <h3>Papá Noel</h3>
+            <img src="img/papa noel.jpg" alt="Papa Noel">
+            <br>
+            <button onclick="descripcion('Papa Noel reparte regalos a los niños durante la Navidad.')">
+                Ver descripción
+            </button>
+        </div>
+        <div class="personaje">
+            <h3>Reno Rodolfo</h3>
+            <img src="img/rodolfo reno de papa noel.jpg" alt="Reno Rodolfo">
+            <br>
+            <button onclick="descripcion('Rodolfo es un reno famoso por su nariz roja y luminosa.')">
+                Ver descripción
+            </button>
+        </div>
+        <div class="personaje">
+            <h3>Muñeco de nieve</h3>
+            <img src="img/muñecos de nieve.jpg" alt="Muñeco de nieve">
+            <br>
+            <button onclick="descripcion('El muñeco de nieve es una figura tradicional de la Navidad.')">
+                Ver descripción
+            </button>
+        </div>
+        <p id="descripcion"></p>
+    </section>
+    <section id="regalos" class="seccion">
+        <h2>Lista de regalos navideños</h2>
+        <input type="text" id="regalo"
+               placeholder="Escribe un regalo">
+        <button onclick="agregarRegalo()">Agregar</button>
+        <ul id="listaRegalos"></ul>
+    </section>
+    <section id="comida" class="seccion">
+        <h2>Seccion de comidas navideñas</h2>
+        <div class="plato">
+            <h3>Pavo</h3>
+            <img src="img/pavo.jpg">
+            <p>Bs 120</p>
+            <button onclick="comprar('Pavo',120)">Agregar</button>
+        </div>
+        <div class="plato">
+            <h3>Panetón</h3>
+            <img src="img/paneton.jpg">
+            <p>Bs 45</p>
+            <button onclick="comprar('Panetón',45)">Agregar</button>
+        </div>
+        <div class="plato">
+            <h3>Bebidas navideñas</h3>
+            <img src="img/bebidas navideñas.jpg">
+            <p>Bs 15</p>
+            <button onclick="comprar('Bebidas',15)">Agregar</button>
+        </div>
+        <h3>Precio a pagar</h3>
+        <ul id="carrito"></ul>
+        <h3 id="total">Total:Bs 0</h3>
+        <button onclick="vaciar()">Vaciar carrito</button>
+    </section>
+    <footer>
+        Diseñado por: Erick Alan Escobar Flores
+    </footer>
+    <script src="js/funciones.js"></script>
+</body>
+</html>

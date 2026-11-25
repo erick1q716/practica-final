@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(187, 30, 30);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+header {
+    border: 5px solid rgb(33, 95, 41);
+    margin: 20px;
+    padding: 10px;
+}
+h1 {
+    color: greenyellow;
+}
+ul{
+    list-style: none;
+}
+nav button {
+    padding: 5px;
+    margin: 5px;
+    font-weight: 200px;
+    cursor: pointer
+}
+section {
+    border: 5px solid rgb(33, 95, 41);
+    margin: 20px;
+    padding: 10px;
+    min-height: 400px;
+}
+.seccion {
+    display: none;
+}
+.activa {
+    display: block;
+}
+h2 {
+    color: greenyellow;
+}
+img {
+    width: 150px;
+    height: 130px;
+    object-fit: cover;
+    margin: 10px;
+}
+table {
+    margin: auto;
+    border-collapse: collapse;
+    background-color: rgb(182, 120, 120);
+    color: white;
+}
+th, td {
+    border: 2px solid white;
+    padding: 10px;
+}
+.historia {
+    background-color: rgb(187, 30, 30);
+    border: 2px solid green;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.personaje {
+    display: inline-block;
+    background-color: rgb(182, 120, 120);
+    border: 2px solid greenyellow;
+    padding: 10px;
+    margin: 10px;
+}
+input {
+    padding: 10px;
+    font-size: 16px;
+}
+#listaRegalos {
+    list-style: inside;
+}
+.plato {
+    display: inline-block;
+    background-color: rgb(182, 120, 120);
+    border: 2px solid greenyellow;
+    padding: 15px;
+    margin: 10px;
+}
+button {
+    padding: 8px 15px;
+    background-color: white;
+    border: 3px solid black;
+    cursor: pointer;
+}
+button:hover {
+    background-color: lightgreen;
+}
+footer {
+    border: 5px solid rgb(33, 95, 41);
+    margin: 20px;
+    padding: 10px;
+    color: greenyellow;
+}
